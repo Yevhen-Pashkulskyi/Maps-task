@@ -23,14 +23,14 @@ public class ShopService {
         return products;
     }
 
-    // цей метод виводить повний перечень товарів
+    // цей метод виводить повний перечень товарів з списку та цінами
     public void printProducts(Map<Integer, Product> products) {
         System.out.println("Товари з магазинчика:");
         for (Map.Entry<Integer, Product> entry : products.entrySet()) {
             System.out.println(entry.getKey() + ". " + entry.getValue());
         }
     }
-
+    //виводить конкретно по номеру списку
     public void printProductById(Map<Integer, Product> products){
         Scanner scanner = new Scanner(System.in);
 
